@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Choice</string>
+
+    <string-array name="fullfood">
+        <item>Tea</item>
+        <item>Coffee</item>
+        <item>Sandwitch(Veg)</item>
+        <item>Sandwitch(Chicken)</item>
+        <item>Pizza(Veg)</item>
+        <item>Pizza(Paneer)</item>
+        <item>Pizza(Chicken)</item>
+        <item>Burger(Veg)</item>
+        <item>Burger(Cheese)</item>
+        <item>Burger(Chicken)</item>
+        <item>Veg Momo(5pcs)</item>
+        <item>Chicken Momo(5 pcs)</item>
+        <item>Fried Momo(5 pcs)</item>
+        <item>Cake</item>
+        <item>Rice(Veg Thali)</item>
+        <item>Roti(Plain)</item>
+        <item>Roti(Rumali)</item>
+        <item>Fried Rice</item>
+        <item>Chicken Kasha(2 pcs)</item>
+        <item>Chili Chicken(2 pcs)</item>
+        <item>Chicken Biryani</item>
+        <item>Combo 1</item>
+        <item>Combo 2</item>
+        <item>Combo 3</item>
+        <item>Combo 4</item>
+    </string-array>
+
+
+    <string-array name="price">
+        <item>Rs 10/-</item>
+        <item>Rs 15/-</item>
+        <item>Rs 25/-)</item>
+        <item>Rs 35/-</item>
+        <item>Rs 30/-</item>
+        <item>Rs 30/-</item>
+        <item>Rs 35/-</item>
+        <item>Rs 30/-</item>
+        <item>Rs 35/-</item>
+        <item>Rs 40</item>
+        <item>Rs 30/-</item>
+        <item>Rs 40/-</item>
+        <item>Rs 50/-</item>
+        <item>Rs 20/-</item>
+        <item>Rs 25/-</item>
+        <item>Rs 3/-</item>
+        <item>Rs 6/-</item>
+        <item>Rs 50/-</item>
+        <item>Rs 40/-</item>
+        <item>Rs 40/-</item>
+        <item>Rs 80/-</item>
+        <item>Rs 60/-</item>
+        <item>Rs 70/-</item>
+        <item>Rs 70/-</item>
+        <item>Rs 100/-</item>
+    </string-array>
+
+
+    <string-array name="comboname">
+        <item>Combo 1</item>
+        <item>Combo 2</item>
+        <item>Combo 3</item>
+        <item>Combo 4</item>
+    </string-array>
+
+
+    <string-array name="comboprice">
+        <item>Rs 60/-</item>
+        <item>Rs 70/-</item>
+        <item>Rs 70/-</item>
+        <item>Rs 100/-</item>
+    </string-array>
+
+    <string-array name="combolist">
+        <item>Tea</item>
+        <item>Coffee</item>
+        <item>Sandwitch(Veg)</item>
+        <item>Sandwitch(Chicken)</item>
+        <item>Pizza(Veg)</item>
+        <item>Pizza(Paneer)</item>
+        <item>Pizza(Chicken)</item>
+        <item>Burger(Veg)</item>
+        <item>Burger(Cheese)</item>
+        <item>Burger(Chicken)</item>
+        <item>Veg Momo(5pcs)</item>
+        <item>Chicken Momo(5 pcs)</item>
+        <item>Fried Momo(5 pcs)</item>
+        <item>Cake</item>
+        <item>Rice(Veg Thali)</item>
+        <item>Roti(Plain)</item>
+        <item>Roti(Rumali)</item>
+        <item>Fried Rice</item>
+        <item>Chicken Kasha(2 pcs)</item>
+        <item>Chili Chicken(2 pcs)</item>
+        <item>Chicken Biryani</item>
+        <item>Burger(Chicken) + Pizza(Paneer) + 300ml Coke</item>
+        <item>Fried Momo + Chili Chicken</item>
+        <item>Fried Rice + Chicken Kasha / Chili Chicken</item>
+        <item>Chicken Briyani + Chicken Tikka Kabab(2pcs) + Chicken Kasha(1pc) + 300ml Coke</item>
+    </string-array>
+
+</resources>

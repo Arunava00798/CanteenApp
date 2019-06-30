@@ -1,0 +1,1397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back5"
+    android:weightSum="12"
+    android:orientation="vertical"
+    tools:context=".Order">
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></LinearLayout>
+
+
+    <LinearLayout
+        android:weightSum="5"
+        android:layout_marginTop="7dp"
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <!--//1st-Tea-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+                        android:id="@+id/LayoutTea"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chktea"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/tea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Tea"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"/>
+
+                        <EditText
+                            android:id="@+id/quantea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></EditText>
+
+
+
+                    </LinearLayout>
+
+                    <!--2nd-Coffee-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkcoffee"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/coffee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Coffee"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.8"/>
+
+                        <EditText
+                            android:id="@+id/quancoffee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+
+                    <!--//3rd-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkvsandwich"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/vsandwich"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".5"
+                            android:text="Veg Sandwich"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"/>
+
+                        <EditText
+                            android:id="@+id/quanvsandwich"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+
+                    <!--//4th-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkcsandwich"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/csandwich"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:text="Chicken Sandwich"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4"/>
+
+                        <EditText
+                            android:id="@+id/quancsandwich"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+
+                    <!--//5th-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkvpizza"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/vpizza"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Veg Pizza"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"/>
+
+                        <EditText
+                            android:id="@+id/quanvpizza"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+                    <!--6th-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkppizza"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/ppizza"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Paneer Pizza"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/quanppizza"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+
+                    <!--//7th-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkcpizza"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/cpizza"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Chicken Pizza"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"/>
+
+                        <EditText
+                            android:id="@+id/quancpizza"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+                    <!--8th-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkvburger"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/vburger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Veg Burger"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"/>
+
+                        <EditText
+                            android:id="@+id/quanvburger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+
+                    <!--9th-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkcburger"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/cburger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Chicken Burger"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.6"/>
+
+                        <EditText
+                            android:id="@+id/quancburger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+                    <!--10th-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkchburger"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/chburger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Cheese Burger"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"/>
+
+                        <EditText
+                            android:id="@+id/quanchburger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+
+                    <!--11th-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkvmomo"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/vmomo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Veg Momo"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"/>
+
+                        <EditText
+                            android:id="@+id/quanvmomo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+
+                    <!--12th-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkcmomo"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/cmomo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Chicken Momo"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.65"/>
+
+                        <EditText
+                            android:id="@+id/quancmomo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+                    <!--13th-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/chkfmomo"
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/fmomo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Fried Momo"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.3"/>
+
+                        <EditText
+                            android:id="@+id/quanfmomo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+
+                    <!--14th-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/chkcake"
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="0"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/cake"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Cake"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"/>
+
+                        <EditText
+                            android:id="@+id/quancake"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+
+                    <!--15th-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkcombo1"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/combo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Combo 1"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.7"/>
+
+                        <EditText
+                            android:id="@+id/quancombo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+                    <!--16th-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkcombo2"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/combo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Combo 2"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.7"/>
+
+                        <EditText
+                            android:id="@+id/quancombo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+                    <!--17th-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkcombo3"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/combo3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Combo 3"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.7"/>
+
+                        <EditText
+                            android:id="@+id/quancombo3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+
+                    <!--18th-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkcombo4"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/combo4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Combo 4"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.7"/>
+
+                        <EditText
+                            android:id="@+id/quancombo4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+
+                    <!--19th-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkvthali"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/vthali"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Veg Thali"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.7"/>
+
+                        <EditText
+                            android:id="@+id/quanvthali"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+                    <!--20th-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkproti"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/proti"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Plain Roti"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.7"/>
+
+                        <EditText
+                            android:id="@+id/quanproti"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+
+                    <!--21st-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkrroti"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/rroti"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Rumali Roti"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+    //when order clicked (send data to receipt)
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.7"/>
+
+                        <EditText
+                            android:id="@+id/quanrroti"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+                    <!--22nd-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkfrice"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/frice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Fried Rice"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.7"/>
+
+                        <EditText
+                            android:id="@+id/quanfrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+                    <!--23rd-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkckasha"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/ckasha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Chicken Kasha(2pcs)"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.4"/>
+
+                        <EditText
+                            android:id="@+id/quanckasha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+                    <!--24th-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkcchilli"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/cchilli"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Chilli Chicken(2pcs)"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.4"/>
+
+                        <EditText
+                            android:id="@+id/quancchilli"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+                    <!--25th-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:id="@+id/chkcbiriyani"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/cbiriyani"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".7"
+                            android:text="Chicken Biriyani"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.7"/>
+
+                        <EditText
+                            android:id="@+id/quancbiriyani"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_weight=".7"
+
+                            android:textColor="@color/white"
+                            android:textSize="22sp">
+                        </EditText>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="5"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <LinearLayout
+            android:layout_weight=".7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/payment"
+                android:scaleType="fitXY"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight=".3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/pay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#fff"
+                android:text="Rs 0.0"
+                android:textStyle="italic"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="5"
+            android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_weight="0"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="CONFIRM"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:background="#1284b7"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"/>
+            <Button
+                android:layout_weight="0"
+                android:id="@+id/reset"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="RESET"
+                android:textSize="18dp"
+                android:textColor="#fff"
+                android:background="#1284b7"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"/>
+
+
+
+            <Button
+                android:id="@+id/btn_order"
+                android:layout_weight="0"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="ORDER"
+                android:textSize="18dp"
+                android:textColor="#fff"
+                android:background="#1284b7"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_weight=".9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></LinearLayout>
+
+
+
+
+
+</LinearLayout>
